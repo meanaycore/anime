@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+    background-color: black; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+   
+}
+
+main * {
+    width: 100%;
+    opacity: 1;
+      -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s linear;
+}
+
+#browser-info {
+    margin: 2% auto;
+    border: 3px solid green;
+    padding: 4px;
+    width: 240px;
+}
+
+#no-orbit-sun {
+    position: absolute;
+    left: 24%;
+    top: 31%;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+}
+
+#circle-wrapper {
+    margin: 20% auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+   
+   margin: 0 auto;
+  height: 100%;
+  width: 96%;
+  padding: 0 2%;
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+   margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border: 2px #4A437F dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+   
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.inner-orbit-cirlces {
+   margin: 0 auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+   margin: 0 auto;
+  width: 220px;
+  height: 220px;
+  border: 2px #4A437F dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.middle-orbit-cirlces {
+    display: table;
+   margin: 0 auto;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+/* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+#outer-orbit {
+   margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border: 2px #4A437F dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 20s linear infinite;
+}
+
+/* ---------- Repeating styles for the outer orbiting circles ---------- */
+.outer-orbit-cirlces {
+    display: table;
+   margin: 0 auto;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #00FFCA;
+}
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#pbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 15px;
+  background-color: #4CAF50;
+}
+
+.no-orbit-images  {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+
+    #no-orbit-sun {
+        position: absolute;
+        left: 220px;
+        top: 30%;
+        margin: 0 auto;
+        width: 380px;
+        height: 160px;
+    }
+    
+    #circle-wrapper {
+        margin: 2% auto;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+}
+
+    /* ---------- Container for the orbiting circles animation ---------- */
+    #circle-orbit-container {
+
+       margin: 0 auto;
+      height: 100%;
+      width: 96%;
+      padding: 0 2%;
+    }
+
+    /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+    #inner-orbit {
+       margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      border: 2px #4A437F dashed;
+      border-radius: 100%;
+      -webkit-animation: spin-right 10s linear infinite;
+      animation: spin-right 10s linear infinite;
+
+    }
+
+    /* ---------- Repeating styles for the inner orbiting circles ---------- */
+    .inner-orbit-cirlces {
+       margin: 0 auto;
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+    }
+
+        /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+    #middle-orbit {
+       margin: 0 auto;
+      width: 400px;
+      height: 400px;
+      border: 2px #4A437F dashed;
+      border-radius: 100%;
+      -webkit-animation: spin-right 15s linear infinite;
+      animation: spin-right 15s linear infinite;
+    }
+
+    /* ---------- Repeating styles for the inner orbiting circles ---------- */
+    .middle-orbit-cirlces {
+        display: table;
+       margin: 0 auto;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+    }
+
+    /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+    #outer-orbit {
+       margin: 0 auto;
+      width: 500px;
+      height: 500px;
+      border: 2px #4A437F dashed;
+      border-radius: 100%;
+      -webkit-animation: spin-right 20s linear infinite;
+      animation: spin-right 20s linear infinite;
+    }
+
+    /* ---------- Repeating styles for the outer orbiting circles ---------- */
+    .outer-orbit-cirlces {
+        display: table;
+       margin: 0 auto;
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      background-color: #00FFCA;
+    }
+  
+}
+
+@media (min-width: 1200px) {
+
+    #no-orbit-sun {
+        position: absolute;
+        left: 620px;
+        top: 35%;
+        margin: 0 auto;
+        width: 380px;
+        height: 160px;
+    }
+}
+
